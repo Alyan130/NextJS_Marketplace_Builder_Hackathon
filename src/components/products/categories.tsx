@@ -1,7 +1,9 @@
+"use client"
 
 import { urlFor } from '@/sanity/lib/image';
 import { fetchCategories } from '@/utils/Categories';
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
 
 interface Category {
   title: string;
@@ -10,9 +12,21 @@ interface Category {
   slug:string,
 }
 
-export default async function CategoryCards() {
 
-  const categories:Category[] = await fetchCategories();
+
+export default function CategoryCards() {
+
+  const [categories, setCategories]=useState<Category[]>([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await fetchCategories();
+      setCategories(products);
+    };
+    fetchProducts();
+  }, []);
+
+
   return (
     <section className='py-8 md:py-14'>
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 group">

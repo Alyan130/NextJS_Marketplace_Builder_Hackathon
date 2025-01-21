@@ -1,0 +1,8 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Product listing validation,Open product listing page > Verify product details,Products displayed correctly,Products displayed correctly,Passed,Low,-,No issues found
+TC002,Product search bar,Enter a product name in the search bar > Click search,Products matching the query displayed,Products matching the query displayed,Passed,Medium,-,No issues found
+TC003,Cart functionality,Add product to cart > Go to cart > Verify added product,Product added to the cart,Product added to the cart,Passed,High,-,No issues found
+TC004,Wishlist functionality,Add product to wishlist > Go to wishlist > Verify added product,Product added to wishlist,Product added to wishlist,Passed,Medium,-,No issues found
+TC005,Category filtration,Select a category > Verify products displayed,Products filtered by category,Products filtered by category,Passed,Low,-,No issues found
+TC006,API testing and error handling,Disconnect API > Refresh page,Show fallback UI with error message,Error message shown,Passed,High,-,Handled gracefully
+TC007,Responsive test,"Open website on mobile, tablet, and desktop",Website should be responsive,Website responsive across all devices,Passed,Medium,-,No issues found

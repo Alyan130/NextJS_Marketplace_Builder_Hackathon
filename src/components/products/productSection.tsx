@@ -1,10 +1,24 @@
-import { fetchProducts } from "@/utils/Products";
+"use client"
+
+
 import ProductCard from "./productcard";
 import { productType } from "@/utils/type";
 import { Skeleton } from "../ui/skeleton";
+import { useEffect, useState } from "react";
+import { fetchProducts } from "@/utils/Products";
 
-export default async function Products() {
-  const data: productType[] = await fetchProducts();
+export default  function Products() {
+
+  const [data, setData] = useState<productType[]>([]);
+
+  
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const product = await fetchProducts();
+      setData(product)
+    };
+    fetchProduct();
+  }, []);
   return (
     <>
       <section className="py-14">

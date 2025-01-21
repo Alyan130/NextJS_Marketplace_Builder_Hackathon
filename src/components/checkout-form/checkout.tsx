@@ -1,7 +1,13 @@
+"use client"
 import React from 'react'
 import CheckoutOrder from './checkoutOrder';
 
 function Checkout() {
+
+  const handleSubmit = () =>{
+    alert("order placed!")
+  }
+
   return (
    <>
    <section className='w-full px-0 sm:px-0'>
@@ -16,6 +22,7 @@ function Checkout() {
                         <input type="text" id="name"
                          className="w-full  rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                          placeholder="Michael Smith"
+                         required
                          />
                     </div>
                    
@@ -24,6 +31,7 @@ function Checkout() {
                     <input type="text" id="address_1" 
                     className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                     placeholder="456 Oak Avenue"
+                    required
                     />
                 </div>
 
@@ -32,6 +40,7 @@ function Checkout() {
                     <input type="text" id="address_2"
                      className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                      placeholder="Suite 200"
+                     required
                      />
                 </div>
                     
@@ -41,6 +50,7 @@ function Checkout() {
                     id="address"
                     className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                     placeholder="+1 555 987 6543"
+                    required
                     />
                 </div>
 
@@ -51,6 +61,7 @@ function Checkout() {
                     id="city" 
                     className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                          placeholder="Los Angeles"
+                         required
                     />
                 </div>
 
@@ -60,6 +71,7 @@ function Checkout() {
                         <input type="text" id="state" 
                         className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                         placeholder="CA"
+                        required
                         />
                     </div>
                     <div>
@@ -68,6 +80,7 @@ function Checkout() {
                         <input type="text" id="postal"
                         className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                         placeholder="90001"
+                        required
                         />
                     </div>
                     <div>
@@ -76,6 +89,7 @@ function Checkout() {
                         <input type="text" id="country"
                         className="w-full rounded-lg border py-2 px-3 dark:bg-gray-700 dark:text-white dark:border-none"
                         placeholder="US"
+                        required
                         />
                     </div>
                 </div>
@@ -94,6 +108,7 @@ function Checkout() {
             </div>
             <button
           type="submit"
+          onClick={handleSubmit}
           className=" font-semibold w-full bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600"
         >
           Submit

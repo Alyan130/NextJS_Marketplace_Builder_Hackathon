@@ -2,22 +2,18 @@
 
 import React from "react";
 import { RiDeleteBin6Fill } from "react-icons/ri";
-import { FaHeart } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
-import { IoMdRemove } from "react-icons/io";
-import { IoMdAdd } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { removeFromWishList } from "@/app/store/features/wishlist";
 import { urlFor } from "@/sanity/lib/image";
 
 interface wishlistData {
-    id: string;
-    title: string;
-    image: string;
-    price: number;
-    description:string,
-    inventory:number,
-  }
+  id: string;
+  title: string;
+  image: string;
+  price: number;
+  description: string;
+  inventory: number;
+}
 
 function Wishlistcard({ id, title, price, image, description }: wishlistData) {
   const dispatch = useDispatch();
@@ -25,7 +21,6 @@ function Wishlistcard({ id, title, price, image, description }: wishlistData) {
   const handleRemove = () => {
     dispatch(removeFromWishList(id));
   };
-
 
   return (
     <div className="w-full flex flex-row justify-between">
@@ -36,7 +31,7 @@ function Wishlistcard({ id, title, price, image, description }: wishlistData) {
         ></div>
         <div className="w-full h-[150px] flex flex-col space-y-6">
           <p className="text-xl text-color1 font-semibold">{title}</p>
-          <p >{description}</p>
+          <p>{description}</p>
           <div className="text-[24px] flex w-full border-b-2 border-slate-200 pb-3 sm:border-none sm:pb-3 ">
             <RiDeleteBin6Fill
               onClick={handleRemove}

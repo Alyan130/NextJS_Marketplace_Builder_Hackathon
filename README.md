@@ -23,30 +23,30 @@ Features:
 Folder Structure:
 
 NEXTJS_MARKETPLACE_BUILDER_HACKATHON
+
+.next/ 
+  documents/                
+   node_modules/           
+   public/                  
+   scripts/
+   src/                
+   app/                
+     components/          
+     lib/              
+     sanity/            
+     utils/               
 |
-├── .next/                   # Build and cache files
-├── documents/               # Documentation and additional resources
-├── node_modules/            # Dependencies and packages
-├── public/                  # Static files such as images and fonts
-├── scripts/                 # Utility scripts for the project
-├── src/                     # Main source code
-|   ├── app/                 # Application-wide components and pages
-|   ├── components/          # Reusable UI components
-|   ├── lib/                 # Helper functions and libraries
-|   ├── sanity/              # Sanity CMS configurations and queries
-|   ├── utils/               # Utility functions and constants
-|
-├── .env.local               # Environment variables
-├── .eslintrc.json           # ESLint configuration
-├── .gitignore               # Git ignore file
-├── components.json          # JSON configuration for components
-├── next-env.d.ts            # Next.js environment types
-├── next.config.mjs          # Next.js configuration file
-├── package-lock.json        # Lockfile for npm dependencies
-├── package.json             # Project metadata and dependencies
-├── postcss.config.mjs       # PostCSS configuration
-├── README.md                # Project documentation (this file)
-├── sanity.cli.ts            # Sanity CLI configuration
-├── sanity.config.ts         # Sanity project configuration
-├── tailwind.config.ts       # Tailwind CSS configuration
-├── tsconfig.json            # TypeScript configuration
+├── .env.local            
+├── .eslintrc.json         
+├── .gitignore             
+├── components.json        
+├── next-env.d.ts            
+├── next.config.mjs         
+├── package-lock.json      
+├── package.json           
+├── postcss.config.mjs    
+├── README.md                
+├── sanity.cli.ts           
+├── sanity.config.ts         
+├── tailwind.config.ts       
+├── tsconfig.json            

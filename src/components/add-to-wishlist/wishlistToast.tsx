@@ -6,7 +6,6 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "../ui/button";
 import { addtoWishlist } from "@/app/store/features/wishlist";
-import { ShoppingCart } from "lucide-react";
 import { FaHeart } from "react-icons/fa";
 
 interface wishlistData {

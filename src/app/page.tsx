@@ -9,12 +9,14 @@ import Section3 from "@/components/section2";
 export default function Home() {
   return (
     <>
+    <main>
    <HeroSection/> 
    <FeaturedSection/>
    <FeaturedProdoucts/>
    <CategoryCards/>
    <Section3/>
    <Products/>
+   </main>
    </>
   );
 }

@@ -37,6 +37,7 @@ export default function CategoryCards() {
         {categories.map((category) => (
           <Link
             key={category.slug}
+            aria-labelledby='product categories'
             href={`/${category.slug}`}
             className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100 hover:opacity-90 transition-opacity"
           >

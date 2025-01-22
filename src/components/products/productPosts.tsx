@@ -2,6 +2,7 @@
 
 import { urlFor } from "@/sanity/lib/image";
 import { fetchInstaProducts } from "@/utils/Instagram";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 
@@ -34,9 +35,11 @@ export function ProductPosts() {
               key={post._id}
               className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity cursor-pointer"
             >
-              <img
+              <Image
                 src={`${urlFor(post.image).url()}`}
                 alt={"pics"}
+                width={300}
+                height={300}
                 className="w-full h-full object-cover"
               />
             </div>

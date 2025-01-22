@@ -5,9 +5,11 @@ import Section1 from "@/components/about/section1";
 export default function section(){
     return(
     <>
+      <main>
      <Section1/>
       <OurBrand/>
       <OurPopularProducts/>
+      </main>
          </>
     );
 }

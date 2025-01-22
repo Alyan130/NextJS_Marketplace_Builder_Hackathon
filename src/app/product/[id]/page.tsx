@@ -6,10 +6,12 @@ export default async function SProduct({ params }:{params:Promise<{id:string}>} 
 
   return (
     <>
+    <main>
       <ProductDetail
        params={params}
       />
       <DetailCards />
+      </main>
     </>
   );
 }

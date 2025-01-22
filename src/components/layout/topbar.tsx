@@ -4,7 +4,7 @@ import { RxQuestionMarkCircled } from "react-icons/rx";
 
 export default function TopBar() {
   return (
-    <div className="bg-[#272343] text-white py-2 px-5 hidden  md:flex justify-between items-center text-sm">
+    <section className="bg-[#272343] text-white py-2 px-5 hidden  md:flex justify-between items-center text-sm">
       <div>
         <span className="hidden sm:inline">Free Shipping On All Orders Over $50</span>
         <span className="sm:hidden">Free Shipping Over $50</span>
@@ -20,7 +20,7 @@ export default function TopBar() {
           <span className="hidden sm:inline">Need Help</span>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

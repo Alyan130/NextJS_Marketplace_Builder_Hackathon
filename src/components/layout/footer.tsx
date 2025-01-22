@@ -18,7 +18,7 @@ export default function Footer() {
               <div className="flex items-center space-x-2 justify-center">
                 <div className='w-full flex gap-2'>
                   <img src="/icons/Vector.png" alt="" />
-                  <span className="text-xl font-semibold text-color1">Comforty</span>
+                  <span className="text-xl font-semibold text-color1">Comfy</span>
                 </div>
               </div>
               <p className="text-[16px] text-color1">
@@ -50,13 +50,13 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-sm  text-color4 uppercase tracking-wider mb-4">
+              <h3 className="text-sm  text-slate-600 uppercase tracking-wider mb-4">
                 Category
               </h3>
               <ul className="space-y-3">
-                {['Sofa', 'Armchair', 'Wing Chair', 'Desk Chair', 'Wooden Chair', 'Park Bench'].map((item) => (
+                {['Wooden Chair', 'Desk Chair', 'Wing Chair'].map((item) => (
                   <li key={item}>
-                    <Link href="#" className="text-color1 hover:text-btncolor text-[16px]">
+                    <Link href={`/product`} className="text-color1 hover:text-btncolor text-[16px]">
                       {item}
                     </Link>
                   </li>
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-sm  text-color4 uppercase tracking-wider mb-4">
+              <h3 className="text-sm  text-slate-600  uppercase tracking-wider mb-4">
                 Support
               </h3>
               <ul className="space-y-3">
@@ -81,7 +81,7 @@ export default function Footer() {
 
 
             <div>
-              <h3 className="text-sm font-medium text-color4 uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-medium  text-slate-600  uppercase tracking-wider mb-4">
                 Newsletter
               </h3>
               <div className="space-y-4">
@@ -95,7 +95,7 @@ export default function Footer() {
                     Subscribe
                   </Button>
                 </div>
-                <p className="text-sm text-color4">
+                <p className="text-sm  text-slate-600 ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nullam tincidunt erat enim.
                 </p>
@@ -105,10 +105,10 @@ export default function Footer() {
 
           <div className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm  text-slate-600 ">
                 © 2021 - Blogv - Designed & Develop by{' '}
                 <Link href="#" className="text-color1 hover:text-primary/90">
-                  Zakirsoft
+                  Alyan
                 </Link>
               </p>
               <div className="flex items-center space-x-4  p-4">

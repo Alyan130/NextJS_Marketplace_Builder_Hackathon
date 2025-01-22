@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className=" md:mx-4 lg:mx-16">
       <div className="max-w-6xl bg-color3 mx-auto px-8 sm:px-10 lg:px-16">
-        <div className="flex md:ml-5 flex-col md:flex-row items-center justify-between py-12 md:py-24 space-y-4 gap-6">
+        <div className="flex md:ml-5 flex-col md:flex-row items-center justify-between py-10 md:py-24 space-y-4 gap-6">
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-[14px] font-regular tracking-wider text-color1 mb-4 md:mb-6">
               WELCOME TO CHAIRY

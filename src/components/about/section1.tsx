@@ -10,7 +10,7 @@ export default function Section1() {
               <div className="pl-4 md:pl-16 w-full md:w-[50%] h-[400px] sm:h-[430px] md:h-[450px] lg:h-[478px] flex flex-col items-start justify-between bg-[#007580] text-white py-8">
                 <div className="w-[90%]">
                   <h2 className="text-2xl md:text-3xl font-bold">
-                    About Us - Comforty
+                    About Us - Comfy
                   </h2>
                   <p className="text-[16px] md:text-[18px] mt-4">
                     At Comforty, we believe that the right chair can transform your

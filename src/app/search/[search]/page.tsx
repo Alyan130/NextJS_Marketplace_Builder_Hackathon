@@ -29,9 +29,9 @@ if(!product.length){
   )
 }
 
-
   return (
     <>
+    <main>
      <section className="py-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
            
@@ -58,6 +58,7 @@ if(!product.length){
           </div>
         </div>
       </section>
+      </main>
     </>
   )
 }

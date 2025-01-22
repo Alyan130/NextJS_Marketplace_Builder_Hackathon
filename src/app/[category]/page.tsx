@@ -13,6 +13,7 @@ const categoryName = category.replace("-", " ");
  
   return (
    <>
+   <main>
   <section className="py-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0">
           <div className="w-full py-1 flex items-center justify-center mb-2 md-mb-15">
@@ -41,6 +42,7 @@ const categoryName = category.replace("-", " ");
           </div>
         </div>
       </section>
+      </main>
    </>
   )
 }

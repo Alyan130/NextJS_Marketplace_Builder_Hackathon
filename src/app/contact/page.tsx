@@ -4,8 +4,10 @@ import Formcategory from "@/components/contact-us/formcategory"
 export default function Contactpage(){
     return(
         <>
+        <main>
          <ContactForm/>
          <Formcategory/>
+         </main>
         </> 
     )
 

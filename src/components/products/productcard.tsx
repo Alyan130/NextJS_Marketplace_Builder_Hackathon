@@ -19,7 +19,7 @@ export default function ProductCard({
       <div
         className={`hover:scale-105 transition-all duration-200 ease ${className1} sm:w-[240px] flex flex-col sm:h-96`}
       >
-        <Link href={`/product/${_id}`}>
+        <Link href={`/product/${_id}`}  aria-labelledby="product">
           <div
             className={`relative w-full sm:h-80 ${className2} rounded-[10px] bg-cover bg-center`}
             style={{ backgroundImage: `url("${urlFor(image).url()}")` }}
@@ -28,9 +28,9 @@ export default function ProductCard({
               <div
                 className={`absolute  text-center py-1 px-1 mt-6 sm:ml-6 ${className3} rounded-md ${
                   badge == "New"
-                    ? "bg-[#01AD5A]"
+                    ? "bg-green-600"
                     : badge == "Sales"
-                      ? "bg-[#F5813F]"
+                      ? "bg-orange-600"
                       : "bg-transparent"
                 }`}
               >
@@ -47,8 +47,8 @@ export default function ProductCard({
               <s className="text-[14px] text-color1">{priceWithoutDiscount}</s>
             </p>
           </div>
-          <Link href={`/product/${_id}`}>
-            <div className="h-11 w-11 hover:bg-btncolor hover:text-white flex items-center self-center justify-center rounded-md text-[22px] text-color1 bg-[#F0F2F3]">
+          <Link href={`/product/${_id}`} aria-label="Go to your shopping cart">
+            <div role="button" className="h-11 w-11 hover:bg-btncolor hover:text-white flex items-center self-center justify-center rounded-md text-[22px] text-color1 bg-[#F0F2F3]">
               <ShoppingCart />
             </div>
           </Link>

@@ -1,13 +1,17 @@
+import Link from "next/link";
+
 export interface productdata {
+  _id:string,
   image: string;
   title: string;
   price: number;
 }
 
-export default function DetailSection({ image, price, title }: productdata) {
+export default function DetailSection({ _id,image, price, title }: productdata) {
   return (
     <>
-      <div className="w-full max-w-[300px] md:max-w-[270px] flex flex-col  shadow-md">
+    <Link href={`/product/${_id}`}>
+      <div className="hover:scale-105 transition-all w-full max-w-[300px] md:max-w-[270px] flex flex-col  shadow-md">
         <div
           className="w-full h-60 sm:h-72 md:h-80 rounded-[10px] bg-cover bg-center"
           style={{ backgroundImage: `url(${image})` }}
@@ -20,6 +24,7 @@ export default function DetailSection({ image, price, title }: productdata) {
           <p className="text-sm sm:text-lg font-bold">{`$${price}`}</p>
         </div>
       </div>
+      </Link>
     </>
   );
 }

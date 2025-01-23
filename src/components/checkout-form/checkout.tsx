@@ -104,7 +104,7 @@ const customerID = generateRandomID();
   
 
     try {
-      const res = await fetch("http://localhost:3000/api/shipengine/get-rates",
+      const res = await fetch("/api/shipengine/get-rates",
         {
           method: "POST",
           headers: {
@@ -133,7 +133,7 @@ const customerID = generateRandomID();
     try {
       // Create the label with the selected rateId
       const labelRes = await fetch(
-        "http://localhost:3000/api/shipengine/create-label",
+        "/api/shipengine/create-label",
         {
           method: "POST",
           headers: {

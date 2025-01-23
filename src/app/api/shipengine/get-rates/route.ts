@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
       shipment: {
         shipTo: shipToAddress,
         shipFrom: {
-          name: "John Doe",
+          name: "Alyan Ali",
           phone: "+1 555 123 4567",
           addressLine1: "742 Evergreen Terrace",
           addressLine2: "Apt 101",
@@ -32,7 +32,8 @@ export async function POST(req: NextRequest) {
     });
 
     return new Response(JSON.stringify(shipmentDetails), { status: 200 });
-  } catch (error) {
+  } catch (error){
+    console.error("Error fetching rates:", error); 
     return new Response(JSON.stringify({ error:"api crash" }), { status: 500 });
   }
 }

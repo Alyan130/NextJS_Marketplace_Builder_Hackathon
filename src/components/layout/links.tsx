@@ -13,7 +13,7 @@ export default function Navbar() {
   const [name, setName] = useState<string>("");
   return (
     <>
-      <nav className="hidden md:block w-full h-[74px] py-6 border-b-2 border-slate-100  px-2 lg:px-2">
+      <nav className="hidden md:block w-full h-[74px] py-6 border-b-2 border-slate-100  px-2 lg:px-0">
         <div className="max-w-6xl mx-auto  flex flex-row items-center justify-between">
           <ul className="gap-8 hidden md:flex ml-1">
             <Link href={"/"}>

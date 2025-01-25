@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { GoChevronDown } from "react-icons/go";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 
@@ -14,7 +15,7 @@ export default function TopBar() {
           <span>Eng</span>
           <GoChevronDown className="w-4 h-4 ml-1" />
         </div>
-        <span>FAQs</span>
+      <Link href={"/faq"}><span>FAQs</span></Link>
         <div className="flex items-center">
           <RxQuestionMarkCircled className="w-5 h-5 mr-1" />
           <span className="hidden sm:inline">Need Help</span>

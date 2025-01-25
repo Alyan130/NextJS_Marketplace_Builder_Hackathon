@@ -36,7 +36,7 @@ export default function Header() {
             <div className="hidden md:flex flex-1 justify-center"></div>
 
 
-            <div className="flex items-center rounded-full justify-end sm:space-x-8 space-x-6 ml-32 sm:hidden">
+            <div className="flex items-center rounded-full justify-end sm:space-x-8 space-x-6 xs:ml-24 ml-32 sm:hidden">
               <div className="flex flex-col items-center justify-end gap-0.5 cursor-pointer">
                 <Link href={"/wishlist"} aria-labelledby="Cart">
                   <div className="relative" role="button">
@@ -58,7 +58,7 @@ export default function Header() {
                   </div>
                 </Link>
               </div>
-              <div className="flex flex-col items-center justify-center gap-0.5 cursor-pointer">
+              <div className="flex flex-col items-center justify-center gap-0.5 xs:mr-4 cursor-pointer">
                 <Link href={"/cart"} aria-labelledby="Wishlist">
                   {" "}
                   <div className="relative" role="button">

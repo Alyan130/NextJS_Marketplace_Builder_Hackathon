@@ -13,7 +13,7 @@ interface products{
 
 export function ProductPosts() {
   const [instagramPosts,setInstagramPosts]=useState<products[]>([]);
-//  const instagramPosts:products[] = await fetchInstaProducts();
+
 
  useEffect(()=>{
   const fetchProducts = async ()=>{

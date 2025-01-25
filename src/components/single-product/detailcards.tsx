@@ -129,7 +129,7 @@ export default function DetailCards() {
   }, []);
 
   return (
-    <section className="py-16 md:py-20 mt-8 md:mt-12">
+    <section className="py-20 md:py-20 mt-14 md:mt-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="w-full py-1 flex flex-row items-center md:justify-between justify-center mb-2 md:mb-5">
           <span className="text-[20px] md:text-[28px] tracking-[0.1em] font-semibold text-color1 uppercase mb-7">

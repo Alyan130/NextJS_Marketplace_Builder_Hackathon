@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		screens:{
+			xs:{max:"380px"},
+		},
 		fontFamily:{
 		   inter:['Inter','sans-serif'],
 		   roboto:['Roboto','sans-serif'],

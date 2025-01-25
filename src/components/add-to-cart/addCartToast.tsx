@@ -4,7 +4,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Button } from "../../ui/button";
+import { Button } from "../ui/button";
 import { addtoCart } from "@/app/store/features/cart";
 import { ShoppingCart } from "lucide-react";
 

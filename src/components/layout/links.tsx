@@ -83,9 +83,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <nav className="block md:hidden w-full h-[74px] border-b-2 pb-4 bg-color3 ">
+      <nav className="block md:hidden w-full h-[68px] border-b-2 pb-4 bg-color3 ">
         <div className="max-w-6xl mx-auto px-8 flex flex-row items-center justify-between">
-          <div className="flex px-4 py-4 border-2  overflow-hidden rounded-full bg-white w-full mx-auto">
+          <div className="flex px-4 py-3 border-2  overflow-hidden rounded-full bg-white w-full mx-auto">
             <input
               type="search"
               placeholder="Search Products"
@@ -93,7 +93,7 @@ export default function Navbar() {
                 setName(e.target.value);
               }}
               value={name}
-              className="w-full outline-none   text-sm"
+              className="w-full outline-none  text-sm"
             />
            <Link href={`/search/${name}`}>
             <button>

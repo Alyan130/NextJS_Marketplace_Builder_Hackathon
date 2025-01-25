@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchProducts, selectProductById } from "@/app/store/features/product";
 import { AppDispatch, RootState } from "@/app/store/store";
-import CartToast from "../add-to-wishlist/add-to-cart/addCartToast";
+import CartToast from "../add-to-cart/addCartToast";
 import { urlFor } from "@/sanity/lib/image";
 import WishListToast from "../add-to-wishlist/wishlistToast";
 import { Skeleton } from "../ui/skeleton";
@@ -156,10 +156,10 @@ export default function ProductDetail({ params }: Params) {
                     Quantity :
                   </span>
                   <Button
-                    className="bg-color1 hover:bg-teal-600 text-white h-11 w-8 sm:h-12 sm:w-12 px-6 ml-4 py-4 rounded-[50%] text-lg group"
+                    className="bg-slate-200 hover:bg-teal-600 text-white h-11 w-8 sm:h-12 sm:w-12 px-6 ml-4 py-4 rounded-[50%] text-lg group"
                     onClick={incrementQuantity}
                   >
-                    <IoMdAdd className="text-xl font-bold" />
+                    <IoMdAdd className="text-xl text-black font-bold" />
                   </Button> 
                   <div className="text-xl md:text-2xl text-color1 ml-4 font-semibold">
                     {cartItem.inventory>cartItem.quantity ? (
@@ -168,15 +168,15 @@ export default function ProductDetail({ params }: Params) {
 }
                   </div>
                   <Button
-                    className="bg-color1 ml-4 hover:bg-teal-600 text-white h-11 w-8 sm:h-12 sm:w-12 px-6 py-4 rounded-[50%] text-center text-lg group"
+                    className="bg-slate-200 ml-4 hover:bg-teal-600 text-white h-11 w-8 sm:h-12 sm:w-12 px-6 py-4 rounded-[50%] text-center text-lg group"
                     onClick={decrementQuantity}
                   >
-                    <IoMdRemove className="text-xl font-bold" />
+                    <IoMdRemove className="text-xl text-color6 font-bold" />
                   </Button>
                 </div>
 
                 <hr className="my-4" />
-                 <div className="w-full flex gap-x-8">
+                 <div className="w-full flex gap-x-6">
                 <CartToast cartItem={cartItem} />
                 <WishListToast wishItem={wishItem}/>
                 </div>

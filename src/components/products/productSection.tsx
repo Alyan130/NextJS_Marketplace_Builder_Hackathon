@@ -40,7 +40,7 @@ export default  function Products() {
                   badge={e.badge || ""}
                   image={e.image}
                   priceWithoutDiscount={e.priceWithoutDiscount}
-                  className1="w-[147px] h-44"
+                  className1="xs:w-[138px] w-[153px] h-44"
                   className2="h-36"
                   className3="h-6 w-12 ml-2"
                 />
@@ -49,7 +49,7 @@ export default  function Products() {
               <div className="py-4 px-[10px] sm:px-2 md:px-0 w-full flex flex-row flex-wrap gap-x-4 sm:gap-x-12 gap-y-20 sm:gap-y-14 justify-between md:justify-center">
                 {Array.from({ length: 8 }).map((_, index) => (
                   <div key={index} className="">
-                    <Skeleton className="h-44 sm:h-60 bg-slate-200 w-[147px] sm:w-[250px] rounded-xl mb-2" />
+                    <Skeleton className="h-44 sm:h-60 bg-slate-200 xs:w-[138px] w-[153px]  sm:w-[250px] rounded-xl mb-2" />
                     <div className="space-y-2">
                       <Skeleton className="h-4 bg-slate-200 w-[147px] sm:w-[250px] " />
                       <Skeleton className="h-4 bg-slate-200  w-3/5" />

@@ -33,7 +33,7 @@ const categoryName = category.replace("-", " ");
                 badge={e.badge || ""}
                 image={e.image}
                 priceWithoutDiscount={e.priceWithoutDiscount}
-                className1="w-[145px] h-44"
+                className1="xs:w-[138px] w-[153px] h-44"
               className2="h-36"
               className3="h-6 w-12 ml-2"
 

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Cartcard from "./cartCard";
 import { useAppSelector } from "@/app/store/hook";
+import { useEffect } from "react";
 
 export default function Cart() {
   const cart = useAppSelector((state) => state.cart);
@@ -11,6 +12,10 @@ export default function Cart() {
     0
   );
 
+useEffect(()=>{
+  console.log(cart);
+  
+})
   const totalPrice = subtotal;
 
   return (

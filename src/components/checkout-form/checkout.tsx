@@ -6,25 +6,6 @@ import Link from "next/link";
 import { useAppSelector } from "@/app/store/hook";
 
 
-interface Product {
-  title: string; 
-  price: number; 
-  image:string;
-}
-
-interface OrderProduct {
-  product: Product; 
-  quantity: number; 
-}
-
-interface Order {
-  number: string; 
-  customerID: string; 
-  shipmentID: string; 
-  products: OrderProduct[];
-}
-
-
 interface label {
   href: string;
   pdf: string;

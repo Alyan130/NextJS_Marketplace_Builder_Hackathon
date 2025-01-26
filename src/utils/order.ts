@@ -1,20 +1,21 @@
 import { client } from "@/sanity/lib/client";
 
-export async function fetchOrders(number:string) {
+export async function fetchOrders() {
     const query = `
-    *[_type == "orders" && number == "${number}"][0]{
-        number,
-        customerID,
-        shipmentID,   
-        products[] {
-          product->{
-            title,
-            price,
-            image,
-          },
-          quantity
+    *[_type == "orders"] | order(_createdAt desc)[0] {
+      number,
+      customerID,
+      shipmentID,
+      customerName,
+      products[] {
+        quantity,
+        product-> {
+          title,
+          price,
+          image
         }
       }
+    }
     `;
   
     try {

@@ -20,6 +20,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'customerName',
+        title: 'Customer Name',
+        type: 'string',
+      },
+      {
         name: 'products',
         title: 'Products',
         type: 'array',

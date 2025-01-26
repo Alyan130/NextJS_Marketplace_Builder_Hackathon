@@ -6,6 +6,25 @@ import Link from "next/link";
 import { useAppSelector } from "@/app/store/hook";
 
 
+interface Product {
+  title: string; 
+  price: number; 
+  image:string;
+}
+
+interface OrderProduct {
+  product: Product; 
+  quantity: number; 
+}
+
+interface Order {
+  number: string; 
+  customerID: string; 
+  shipmentID: string; 
+  products: OrderProduct[];
+}
+
+
 interface label {
   href: string;
   pdf: string;
@@ -166,6 +185,7 @@ function Checkout() {
     await client.create({
       _type: "shipment",
       shipmentId: shipment?.shipmentId,
+      orderNumber:orderNumber,
       shipDate: shipment?.shipDate,
       carrierId: shipment?.carrierId,
       carrierCode: shipment?.carrierCode,
@@ -400,7 +420,7 @@ function Checkout() {
                       </p>
                       <p>
                         <strong>Ship Date:</strong>{" "}
-                        {new Date(shipment?.shipDate).toLocaleString()}
+                        {shipment?.shipDate}
                       </p>
                       <p>
                         <strong>Carrier ID:</strong> {shipment?.carrierId}
@@ -429,7 +449,7 @@ function Checkout() {
                           Download Label
                         </button>
                       </a>
-                      <Link href={`/orders/${orderNumber}`}>
+                      <Link href={"/orders"}>
                         <button
                           onClick={handleOrder}
                           type="button"

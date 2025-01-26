@@ -9,6 +9,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'orderNumber',
+        title: 'order Number',
+        type: 'string',
+      },
+      {
         name: 'shipDate',
         title: 'Ship Date',
         type: 'date',

@@ -20,15 +20,13 @@ interface Order {
   number: string; 
   customerID: string; 
   shipmentID: string; 
+  customerName:string,
   products: OrderProduct[];
 }
 
-export default async function OrderComplete({params}:{params:Promise<{number:string}>}) {
+export default async function OrderComplete() {
 
-  const data = await params;
-  const ordernumber= data.number;
-const order:Order = await fetchOrders(ordernumber);
-
+const order:Order = await fetchOrders();
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -98,6 +96,7 @@ const order:Order = await fetchOrders(ordernumber);
             <div className="space-y-2">
               <p className="">Order number : {order.number}</p>
               <p className="">Customer ID : {order.customerID}</p>
+              <p className="">Customer ID : {order.customerName}</p>
               <p className="">
                 Shipment ID : {order.shipmentID}
               </p>

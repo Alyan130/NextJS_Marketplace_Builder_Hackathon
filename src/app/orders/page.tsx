@@ -95,7 +95,7 @@ const order:Order = await fetchOrders();
             <h2 className="text-xl font-semibold mb-4">Order details</h2>
             <div className="space-y-2">
               <p className="">Order number : {order.number}</p>
-              <p className="">Customer ID : {order.customerID}</p>
+              <p className="">Customer Name : {order.customerID}</p>
               <p className="">Customer ID : {order.customerName}</p>
               <p className="">
                 Shipment ID : {order.shipmentID}

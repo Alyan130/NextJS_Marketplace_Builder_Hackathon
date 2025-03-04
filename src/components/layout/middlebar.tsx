@@ -14,6 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { BsDropbox } from "react-icons/bs";
 
 export default function Header() {
   const cart = useAppSelector((state) => state.cart);
@@ -123,9 +124,9 @@ export default function Header() {
                   </Link>
                   <DropdownMenu>
                     <DropdownMenuTrigger className="text-[#636270] text-[18px]  font-medium  hover:text-btncolor mb-2">
-                      Products
+                      Products 
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent>
+                   <DropdownMenuContent>
                       <DropdownMenuSeparator />
                       <DropdownMenuItem className="text-[#636270] border-none  hover:text-btncolor text-[16px] ">
                         <Link href={"/desk-chair"}>Desk Chair</Link>{" "}
@@ -141,6 +142,7 @@ export default function Header() {
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
+
                   <Link href={"/faq"}>
                     <li className="text-[#636270] text-[18px] font-medium  hover:text-btncolor mb-2">
                       Faq

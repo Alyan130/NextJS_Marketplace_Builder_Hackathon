@@ -81,6 +81,8 @@ export default function RootLayout({
         window.botpress.init({
           botId: "d3aea06d-0f04-4701-bec3-b457caf79902",
           configuration: {
+           botName: "Comfy AI",
+           botAvatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0sBiJfLFeweryIGCc2DCXBkaKzFKlbLYZKw&s",
             website: {},
             email: {},
             phone: {},
